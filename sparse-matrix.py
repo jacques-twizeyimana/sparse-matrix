@@ -17,6 +17,10 @@ class SparseMatrix:
         self.num_rows = num_rows  # Number of rows in the matrix
         self.num_cols = num_cols  # Number of columns in the matrix
         self.matrix = {}  # Dictionary to store non-zero elements with keys as (row, col) tuples
+
+        # create output folder if not exists
+        if not os.path.exists('./output'):
+            os.makedirs('./output')
         
         if matrix_file_path:
             self._load_from_file(matrix_file_path)
@@ -104,10 +108,6 @@ class SparseMatrix:
             if (row, col) not in self.matrix:
                 result.setElement(row, col, value)
         
-        # write result to a file in ./output folder
-        with open('./output/result.txt', 'w') as file:
-            file.write(str(result))
-
         return result
     
     def __sub__(self, other):
@@ -228,6 +228,12 @@ def main():
         return
     
     print(f"\nResult of {operation}:")
+
+    # write result to file1_operation_file2.txt
+    output_file = file_path1.split("/")[-1].split(".")[0] + "_" + operation + "_" + file_path2.split("/")[-1].split(".")[0] + ".txt"
+    with open(f'./output/{output_file}', 'w') as file:
+        file.write(str(result))
+
     print(result)
 
 if __name__ == "__main__":
