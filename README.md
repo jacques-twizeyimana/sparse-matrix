@@ -2,12 +2,11 @@
 
 ## Overview
 
-This program implements a Sparse Matrix data structure and operations in Python. It's designed to efficiently handle large matrices with many zero elements by only storing non-zero values. The program supports reading matrices from files, performing basic matrix operations (addition, subtraction, multiplication), and outputting the results.
+This program implements a Sparse Matrix data structure and operations in Python. The program supports reading matrices from files, performing basic matrix operations (addition, subtraction, multiplication), and outputting the results.
 
 ## Features
 
 - Efficient storage of sparse matrices
-- File I/O for matrix input
 - Matrix addition, subtraction, and multiplication
 - User-friendly command-line interface
 
