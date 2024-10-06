@@ -48,6 +48,14 @@ The class implements several magic methods to enable intuitive matrix operations
 
 ## Example Usage
 
+### Choose Operation you want
+<img width="568" alt="image" src="https://github.com/user-attachments/assets/20be5e08-663a-4dd5-b601-652054ea1eb0">
+
+### Select input files or type file path
+<img width="513" alt="image" src="https://github.com/user-attachments/assets/354f0f77-1f25-42e9-b579-e1a243499fa2">
+
+
+
 ## Error Handling
 
 The program includes error handling for:
